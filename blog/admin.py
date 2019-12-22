@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Post
 
-# Register your models here.
+# Registering model so it can show up on admin page
+admin.site.register(Post)

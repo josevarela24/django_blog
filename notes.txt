@@ -1,0 +1,6 @@
+after installing pylint_django, add this to command palette -> Preferences: Configure Language Specific Settings -> Python
+
+"python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--disable=C0111"
+    ]
