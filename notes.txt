@@ -4,3 +4,7 @@ after installing pylint_django, add this to command palette -> Preferences: Conf
         "--load-plugins=pylint_django",
         "--disable=C0111"
     ]
+
+After making new models, must migrate each time
+"python manage.py makemigrations"
+"python manage.py migrate"
