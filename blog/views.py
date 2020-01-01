@@ -20,7 +20,7 @@ class PostListView(ListView):
     template_name = "blog/home.html"
     context_object_name = "posts"
     ordering = ["-date_posted"]
-    paginate_by = 2
+    paginate_by = 5
 
 
 class PostDetailView(DetailView):
@@ -51,7 +51,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Post
-    success_url = '/'
+    success_url = "/"
 
     def test_func(self):
         post = self.get_object()
