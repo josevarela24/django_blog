@@ -8,3 +8,5 @@ after installing pylint_django, add this to command palette -> Preferences: Conf
 After making new models, must migrate each time
 "python manage.py makemigrations"
 "python manage.py migrate"
+
+need to add environment variables to windows pc to be able to use gmail from other apps
